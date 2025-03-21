@@ -7,7 +7,7 @@ const Projects = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get("http://localhost:5002/api/projects")
+        axios.get("https://myportfolio2-1.onrender.com/api/projects")
             .then((response) => {
                 setProjects(response.data);
                 setLoading(false);

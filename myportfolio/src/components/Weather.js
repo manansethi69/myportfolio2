@@ -7,7 +7,7 @@ const Weather = ({ theme }) => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get("http://localhost:5002/api/weather?city=Halifax")
+        axios.get("https://myportfolio2-1.onrender.com/api/weather?city=Halifax")
             .then((response) => {
                 setWeather(response.data);
                 setLoading(false);
